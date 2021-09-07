@@ -314,7 +314,7 @@ section h1 {
   
   /* Change the link color to #111 (black) on hover */
 .navbar li a:hover:after {
-    width: 65%;
+    width: 100%;
     /* left: 0; */
   }
 
