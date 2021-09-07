@@ -1,0 +1,413 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.nav {
+    width: 95%;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transform: translate(-4%, 33px);
+    position: absolute;
+    left: 90px;
+    display: block;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease;
+}
+
+
+.nav li {
+    float:left;
+    display: table-cell;
+    position: relative;
+    padding: 15px -22px;
+  }
+  
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.nav li a:hover:after {
+    width: 65%;
+    /* left: 0; */
+  }
+
+a:after {
+    /* background: none repeat scroll 0 0 transparent; */
+    bottom: 11px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 18%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s;
+     /* left 0.3s ease 0s; */
+    width: 0;
+  }
+
+.introimage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.introname {    
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 1;
+    animation: fadeIn 1.5s ease;
+}
+
+.topline {
+    background-color: black;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 10%;
+}
+
+.description {
+    position: relative;
+    transform: translate(50%, 50%);
+    height: -webkit-fill-available;
+    left: -50%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: table-cell;
+  }
+.description .text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130%;
+    font-weight: 900;
+    width: 50%;
+    white-space: pre-line;
+    text-align: justify;
+}
+
+.introlinks {
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25% 0 0 -25%;
+}
+
+.introlinks:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 57%;
+    left: 21.5%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    color: white;
+}
+.toptext {
+    width: 100%;
+    position: absolute;
+    top: 33.4%;
+    left: 10%;
+    height: 59%;
+}
+
+.intro a {
+    position: relative;
+    font-size: 70%;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 400%;
+    top: -20%;
+    left: 3%
+}
+
+#photos_start {
+    padding-top: 10px;
+}
+
+section {
+    color: white;
+}
+
+section h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 70 px;
+}
+
+
+
+.CV {
+    color: black;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.PD {
+    height: 1fr;
+}
+
+.CVTEXT {
+    padding: 1%;
+    color: black;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "grid1 grid2";
+}
+
+.eng {
+    padding-top: 85%;
+    grid-area: grid1;
+    justify-self: center;
+    font-size: 70%;
+    text-transform: uppercase;
+}
+.rus {
+    padding-top: 55%;
+    grid-area: grid1;
+    justify-self: center;
+    font-weight: normal;
+    font-size: 70%;
+    /* font-style: italic; */
+    /* text-transform: uppercase; */
+}
+
+.grid2 {
+    padding: 5%;
+    grid-area: grid2;
+    font-weight: bold;
+    justify-self: right;
+    width: 100%;
+    height: auto;
+}
+
+.contacts {
+    position: absolute;
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, 0%);
+    font-size: 110%;
+    font-weight: bold;
+    white-space: pre-line;
+    text-align: justify;
+    list-style-type: none;
+    
+    
+}
+
+.contacts li a{
+    color: white;
+    
+    text-decoration: none;
+}
+
+.video {
+    width: 100%;
+    height: 300px;
+}
+
+
+.layer {
+    position: relative;
+    transform: translate(50%, 50%);
+    height: -webkit-fill-available;
+    left: -50%;
+ }
+
+.line {
+    background-color: white;
+    height: 100%;
+    width: 1px;
+    z-index: 1;
+    position: sticky;
+    transform: translate(10px, 10px);
+    left: 49%;
+}
+
+.credit {
+    width: 40%;
+    color: white;
+    font-weight: normal;
+    font-size: 7px;
+    position: relative;
+    left: 53%;
+    
+}
+.navbar {
+    width: 95%;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transform: translate(-4%, 33px);
+    position: absolute;
+    left: 90px;
+    display: block;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease;
+    position: fixed;
+   z-index: 1;
+}
+
+
+.navbar li {
+    float:left;
+    display: table-cell;
+    position: relative;
+    padding: 15px -22px;
+  }
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+.navbar li a:hover:after {
+    width: 65%;
+    /* left: 0; */
+  }
+
+.navbar .background {
+    position: absolute;
+    width: 100%;
+    height: 230%;
+    background-color: black;
+    z-index: 0;
+    top: -80%;
+}
+
+/* NEWS */
+
+
+.description .newstext .tbnews {
+    table-layout: auto;
+    height: 612px;
+}
+
+.description .newstext .left {
+    width: 19%;
+}
+.description .newstext .middle {
+    width: 27%;
+}
+.description .newstext .right {
+    table-layout: auto;
+}
+
+.description .newstext td {
+    vertical-align: top;
+}
+.description .newstext p {
+    font-size: 350%;
+    padding-bottom: 5%;
+}
+
+.description .newstext {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130%;
+    font-weight: 900;
+    width: 50%;
+    height: -webkit-fill-available;
+    white-space: pre-line;
+    text-align: justify;
+    top: 15%;
+    animation: fadeIn 1.5s ease;
+}
+
+
+/* BIO */
+
+.description .biotext p {
+    font-size: 350%;
+    padding-bottom: 5%;
+}
+
+.description .biotext {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130%;
+    font-weight: 900;
+    width: 50%;
+    height: -webkit-fill-available;
+    white-space: pre-line;
+    text-align: justify;
+    top: 15%;
+    animation: fadeIn 1.5s ease;
+}
+
+.description .biotext .info{
+    font-size: 100%;
+    line-height: 125%;
+}
+
+.description .biotext .biotb {
+    table-layout: auto;
+    height: 612px;
+}
+
+.description .nbioext .left {
+    width: 19%;
+}
+.description .biotext .middle {
+    width: 27%;
+}
+.description .biotext .right {
+    table-layout: auto;
+}
+
+.description .S_HEADER {
+    text-align: left;
+}
