@@ -369,7 +369,7 @@ section h1 {
 
 /* BIO */
 
-.description .biotext p {
+.description .biotext .title {
     font-size: 350%;
     padding-bottom: 5%;
 }
@@ -397,8 +397,10 @@ section h1 {
     table-layout: auto;
     height: 612px;
 }
-
-.description .nbioext .left {
+.description .biotext td {
+    font-size: 78%;
+}
+.description .biotext .left {
     width: 19%;
 }
 .description .biotext .middle {
@@ -410,4 +412,5 @@ section h1 {
 
 .description .S_HEADER {
     text-align: left;
+    font-size: 218%;
 }
