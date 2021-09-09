@@ -188,7 +188,6 @@
             position: absolute;
             width: 100vw;
             height: 100vh;
-            top: 0.3vh;
             background-color: black;
             /* visibility: hidden; */
             transition: opacity 1s;
@@ -434,10 +433,11 @@
     }
     
     .description {
-        /* position: absolute; */
-        transform: translate(50%, 50%);
-        height: -webkit-fill-available;
-        /* left: -50%; */
+        position: relative;
+        transform: translate(50%, 0%);
+        /* height: -webkit-max-content; */
+        left: -50%;
+        height: 110vh;
     }
     .dropdown-content {
         display: none;
@@ -453,7 +453,7 @@
         height: -webkit-fill-available;
         /* left: 48%; */
         /* height: -webkit-fill-available; */
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 15%);
         font-size: 3.7vw;
         font-weight: 900;
         width: 50%;
