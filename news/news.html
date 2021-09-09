@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
     <title>YNM</title>
 </head>
 <body id="body">
@@ -22,6 +22,33 @@
         <li><a href="../news/news.html">NEWS</a></li>
         <li><a href="#end">CONTACT</a></li>
         <li style="float:right"><a href="mailto:darianepeutpas@gmail.com">DARIA MARSHENKO</a></li>
+    </div>
+    <!-- MOBILE NAV -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="topnav" style="color: white">
+        <li><a href="mailto:darianepeutpas@gmail.com" class="active">DARIA MARSHENKO</a></li>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <div id="background" style="opacity: 0"></div>
+            <div id="links" style="opacity: 0">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../about/about.html">ABOUT</a></li> 
+                <a href="" class="">WORKS</a>
+                <li><a href="./works/photo/photo.html" style="padding-left: 20vw;">    PHOTO</a></li> 
+                <li><a href="./works/video/video.html" style="padding-left: 20vw;">    VIDEO</a></li> 
+                <li><a href="./news/news.html">NEWS</a></li>
+                <li onclick="navbaropen()"><a href="#end">CONTACT</a></li>
+            </div>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="navbaropen()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
     </div>
     <!-- <div class="name">
         <li style="float:right"><a href="about.asp">DARIA MARSHENKO</a></li>
@@ -91,6 +118,72 @@
         // if(window.location.href != "https://unconditional-affection.netlify.app/" && window.location.href != "file:///Users/cam/Desktop/VS%20CODE/DARIA%20WEBSITE/index.html"){
         //     window.location.href=window.location.href.substr(window.location.href,window.location.href.indexOf('#'))
         //     }
+        </script>
+        <script type="text/javascript">
+            /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+            function navbaropen() {
+                var y = document.getElementById("links");
+                if (y.style.opacity === "0") {
+                    y.style.visibility = "visible";
+                    y.style.opacity = "1";
+                } else {
+                    y.style.opacity = "0";
+                    
+                }
+                var x = document.getElementById("background");
+                if (x.style.opacity === "0") {
+                    x.style.visibility = "visible";
+                    x.style.opacity = "1";
+                } else {
+                    x.style.opacity = "0";
+                    
+                }
+                var z = document.getElementById("myLinks");
+                if (z.style.visibility === "hidden") {
+                    z.style.visibility = "visible";
+                } else {
+                    z.style.visibility = "hidden";
+                    
+                }
+                var u = document.getElementById("topnav a");
+                if (u.style.color === "white") {
+                    u.style.color = "black";
+                } else {
+                    u.style.color = "white";
+                    
+                }
+            }
+            </script>
+    
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript">
+                var ScrollHandler = (function() {
+                //Assumes jQuery has initialized
+                var hasScrollListener = false;
+                var toggleScrollLock = function() {
+                    if(!hasScrollListener) {
+                        $('body').css('overflow', 'hidden');
+                        // $('.freezeScroll').css('color', '#ff0000');
+                    }
+                    else { 
+                        $('body').css('overflow', '');
+                        // $('.freezeScroll').css('color', '#0000ff');
+                    }
+                    hasScrollListener = !hasScrollListener;
+                }
+                //Return a public toggle method
+                return {
+                    toggleScrollLock: toggleScrollLock
+                };
+            });
+    
+            $(document).ready(function() {
+                var scrollHandler = new ScrollHandler(),
+                    links = $('.topnav a.icon');
+                    links.each(function(i, element) {
+                        $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+                    });
+            });
         </script>
 </body>
 </html>
