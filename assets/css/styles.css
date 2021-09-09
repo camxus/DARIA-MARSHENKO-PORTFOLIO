@@ -240,7 +240,7 @@
     /* BIO */
 
     .description .biotext .title {
-        font-size: 350%;
+        font-size: 3vw;
         padding-bottom: 5%;
     }
 
@@ -254,7 +254,7 @@
         /* height: -webkit-fill-available; */
         white-space: pre-line;
         text-align: justify;
-        top: 60vh;
+        top: 55vh;
         animation: fadeIn 1.5s ease;
     }
 
