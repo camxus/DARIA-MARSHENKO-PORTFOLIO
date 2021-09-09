@@ -251,7 +251,7 @@
         /* font-size: 130%; */
         font-weight: 900;
         width: 68%;
-        height: -webkit-fill-available;
+        /* height: -webkit-fill-available; */
         white-space: pre-line;
         text-align: justify;
         top: 15%;
