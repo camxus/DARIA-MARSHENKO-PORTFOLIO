@@ -434,10 +434,10 @@
     }
     
     .description {
-        position: relative;
+        /* position: absolute; */
         transform: translate(50%, 50%);
         height: -webkit-fill-available;
-        left: -50%;
+        /* left: -50%; */
     }
     .dropdown-content {
         display: none;
@@ -449,10 +449,12 @@
         display: table-cell;
       }
     .description .text {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 130%;
+        position: relative;
+        height: -webkit-fill-available;
+        /* left: 48%; */
+        /* height: -webkit-fill-available; */
+        transform: translate(-50%, -30%);
+        font-size: 3.7vw;
         font-weight: 900;
         width: 50%;
         white-space: pre-line;
