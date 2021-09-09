@@ -446,10 +446,12 @@
         display: table-cell;
       }
     .description .text {
-        position: absolute;
+        position: relative;
+        height: -webkit-fill-available;
         left: 50%;
+        top: 25%;
         transform: translate(-50%, -50%);
-        font-size: 130%;
+        font-size: 3.7vw;
         font-weight: 900;
         width: 50%;
         white-space: pre-line;
