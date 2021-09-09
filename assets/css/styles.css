@@ -10,7 +10,7 @@
 
     .introimage {
         height: 100%;
-        /* width: 100%; */
+        width: 100%;
         object-fit: cover;
     }
 
@@ -348,6 +348,7 @@
         color: white;
         font-family: sans-serif;
     }
+
     
     .nav {
         width: 95%;
@@ -361,6 +362,7 @@
         display: block;
         font-weight: bold;
         animation: fadeIn 1.5s ease;
+        z-index: 3;
     }
     
     
@@ -405,6 +407,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        z-index: 2;
     }
     
     .intro {
@@ -474,7 +477,9 @@
         transform: translate(-50%, -50%);
         font-size: 56px;
         color: white;
+        z-index: 3;
     }
+
     .toptext {
         width: 100%;
         position: absolute;
