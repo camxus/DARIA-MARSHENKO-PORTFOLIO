@@ -178,8 +178,8 @@
             display: block;
             height: -webkit-fill-available;
             transition-delay: 1s;
-            transition-property: visibility;
-            visibility: hidden;
+            transition-property: display;
+            display: none;
         }
 
         .topnav #myLinks #background {
@@ -189,7 +189,7 @@
             height: 100vh;
             top: 0.3vh;
             background-color: black;
-            visibility: hidden;
+            display: none;
             transition: opacity 1s;
         }
 
@@ -197,7 +197,7 @@
             position: absolute;
             z-index: 2;
             width: 100vw;
-            visibility: hidden;
+            display: none;
             transition: opacity 1s;
         }
         
