@@ -15,12 +15,19 @@
         object-fit: cover;
     }
 
+    .description {
+        position: relative;
+        transform: translate(50%, 0%);
+        height: -webkit-fill-available;
+        left: -50%;
+    }
+
 
     .description .text {
         position: relative;
-        height: -webkit-fill-available;
         left: 50%;
-        transform: translate(-50%, -35%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-size: 3.7vw;
         font-weight: 900;
         width: 50%;
@@ -250,7 +257,7 @@
     .description .biotext {
         position: relative;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
         /* font-size: 130%; */
         font-weight: 900;
         width: 68%;
@@ -318,7 +325,7 @@
     .description .newstext {
         position: relative;
         left: 50vw;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
         font-size: 3vw;
         font-weight: 900;
         width: 78vw;
@@ -435,11 +442,9 @@
     
     .description {
         position: relative;
-        transform: translate(50%, 0%);
-        /* height: -webkit-max-content; */
-        left: -50%;
         height: 110vh;
     }
+
     .dropdown-content {
         display: none;
         position: absolute;
@@ -449,13 +454,14 @@
       .dropdown:hover .dropdown-content {
         display: table-cell;
       }
+      
+
     .description .text {
         position: relative;
-        height: -webkit-fill-available;
-        /* left: 48%; */
-        /* height: -webkit-fill-available; */
-        transform: translate(-50%, 15%);
-        font-size: 3.7vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.4vw;
         font-weight: 900;
         width: 50%;
         white-space: pre-line;
@@ -699,7 +705,7 @@
     .description .newstext {
         position: relative;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
         font-size: 130%;
         font-weight: 900;
         width: 50%;
@@ -721,11 +727,11 @@
     .description .biotext {
         position: relative;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
         font-size: 130%;
         font-weight: 900;
         width: 50%;
-        height: -webkit-fill-available;
+        /* height: -webkit-fill-available; */
         white-space: pre-line;
         text-align: justify;
         top: 15%;
@@ -787,12 +793,7 @@ body {
     left: 10%;
 }
 
-.description {
-    position: relative;
-    transform: translate(50%, 50%);
-    height: -webkit-max-content;
-    left: -50%;
-}
+
 .dropdown-content {
     display: none;
     position: absolute;
