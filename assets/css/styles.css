@@ -38,6 +38,7 @@
         white-space: pre-line;
         text-align: justify;
         list-style-type: none;
+        color: white;
     }
     .intro h1 {
         position: absolute;
@@ -573,7 +574,7 @@
         white-space: pre-line;
         text-align: justify;
         list-style-type: none;
-        
+        color: white;
         
     }
     
