@@ -114,7 +114,7 @@
         function navbaropen() {
             var y = document.getElementById("links");
             if (y.style.opacity === "0") {
-                y.style.display = "block";
+                y.style.visibility = "visible";
                 y.style.opacity = "1";
             } else {
                 y.style.opacity = "0";
@@ -122,17 +122,17 @@
             }
             var x = document.getElementById("background");
             if (x.style.opacity === "0") {
-                x.style.display = "block";
+                x.style.visibility = "visible";
                 x.style.opacity = "1";
             } else {
                 x.style.opacity = "0";
                 
             }
             var z = document.getElementById("myLinks");
-            if (z.style.display === "none") {
-                z.style.display = "block";
+            if (z.style.visibility === "hidden") {
+                z.style.visibility = "visible";
             } else {
-                z.style.display = "none";
+                z.style.visibility = "hidden";
                 
             }
             var u = document.getElementById("topnav a");
