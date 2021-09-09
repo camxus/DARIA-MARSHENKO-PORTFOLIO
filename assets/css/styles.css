@@ -787,7 +787,7 @@ body {
 .description {
     position: relative;
     transform: translate(50%, 50%);
-    /* height: -webkit-max-content; */
+    height: -webkit-max-content;
     left: -50%;
 }
 .dropdown-content {
