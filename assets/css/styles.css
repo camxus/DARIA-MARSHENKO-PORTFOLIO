@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+    color: white;
     
 }
 @media only screen and (max-width: 600px) {
@@ -167,6 +168,11 @@
     }
     
     /* MOBILE NAV */
+        .mobile-nav{
+            z-index: 1;
+            position: absolute;
+        }
+
         /* Style the navigation menu */
         .topnav {
             overflow: hidden;
@@ -791,6 +797,8 @@ body {
 
 .intro {
     height: 100vh;
+    z-index: 0;
+    position: relative;
 }
 
 .introname {    
