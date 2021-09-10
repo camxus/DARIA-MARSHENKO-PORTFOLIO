@@ -34,6 +34,21 @@ const controller = new ScrollMagic.Controller();
     .addTo(controller)
 
 
+    // NAVBAR BG ANIMATION
+    const navbg = document.querySelector('.bgfloat');
+
+    const navanim = TweenMax.fromTo(navbg, 3, { height: 300 }, { height: 368 });
+    
+    let navscene = new ScrollMagic.Scene({
+        duration: 100,
+        triggerElement: text2,
+        triggerHook: 0,
+    })
+    // .setPin(text2)
+    .setTween(navanim)
+    .addTo(controller)
+    // .addIndicators(controller)
+
 if (history.scrollRestoration) {
     history.scrollRestoration = 'manual';
 } else {
