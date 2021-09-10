@@ -8,7 +8,7 @@
     color: white;
     
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     .introimage {
         height: 100%;
@@ -30,7 +30,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        font-size: 3.7vw;
+        font-size: 2.9vw;
         font-weight: 900;
         width: 50%;
         white-space: pre-line;
@@ -51,7 +51,7 @@
     }
     .intro h1 {
         position: absolute;
-        top: 101vw;
+        top: 58vh;
         left: 50vw;
         transform: translate(-50%, -50%);
         font-size: 13vw;
@@ -368,7 +368,7 @@
 }
 
     /* LAPTOPS */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .mobile-nav{
         display: none;
     }
