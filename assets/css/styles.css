@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
     text-decoration: none;
     color: white;
-    
 }
 @media only screen and (max-width: 768px) {
 
@@ -289,7 +288,7 @@
         font-size: 3vw;
     }
     .description .biotext .left {
-        width: 21vw;
+        width: 15vw;
     }
     .description .biotext .middle {
         width: 27%;
@@ -333,7 +332,7 @@
         position: relative;
         left: 50vw;
         transform: translate(-50%, 0%);
-        font-size: 3vw;
+        font-size: 2.3vw;
         font-weight: 900;
         width: 78vw;
         height: -webkit-fill-available;
@@ -404,7 +403,7 @@
       }
       
     .nav li a {
-        font-size: 0.9vw;
+        font-size: 90%;
         display: block;
         color: white;
         text-align: center;
