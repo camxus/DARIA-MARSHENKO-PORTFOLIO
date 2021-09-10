@@ -40,7 +40,7 @@ const controller = new ScrollMagic.Controller();
     const navanim = TweenMax.fromTo(navbg, 3, { height: 300 }, { height: 368 });
     
     let navscene = new ScrollMagic.Scene({
-        duration: 100,
+        duration: 300,
         triggerElement: text2,
         triggerHook: 0,
     })
