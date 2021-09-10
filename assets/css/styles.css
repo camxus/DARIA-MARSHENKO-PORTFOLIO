@@ -13,6 +13,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+        animation: fadeIn 1.5s ease;
     }
 
     .description {
@@ -419,6 +420,7 @@
         width: 100%;
         object-fit: cover;
         z-index: 2;
+        animation: fadeIn 1.5s ease;
     }
     
     .intro {

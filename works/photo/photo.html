@@ -92,36 +92,35 @@
 
     <script src="./assets/js/app.js"></script>
     <script src="../../assets/js/navbar.js"></script>
-    
-        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript">
-                var ScrollHandler = (function() {
-                //Assumes jQuery has initialized
-                var hasScrollListener = false;
-                var toggleScrollLock = function() {
-                    if(!hasScrollListener) {
-                        $('body').css('overflow', 'hidden');
-                        // $('.freezeScroll').css('color', '#ff0000');
-                    }
-                    else { 
-                        $('body').css('overflow', '');
-                        // $('.freezeScroll').css('color', '#0000ff');
-                    }
-                    hasScrollListener = !hasScrollListener;
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+            var ScrollHandler = (function() {
+            //Assumes jQuery has initialized
+            var hasScrollListener = false;
+            var toggleScrollLock = function() {
+                if(!hasScrollListener) {
+                    $('body').css('overflow', 'hidden');
+                    // $('.freezeScroll').css('color', '#ff0000');
                 }
-                //Return a public toggle method
-                return {
-                    toggleScrollLock: toggleScrollLock
-                };
-            });
-    
-            $(document).ready(function() {
-                var scrollHandler = new ScrollHandler(),
-                    links = $('.topnav a.icon');
-                    links.each(function(i, element) {
-                        $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
-                    });
-            });
-        </script>
+                else { 
+                    $('body').css('overflow', '');
+                    // $('.freezeScroll').css('color', '#0000ff');
+                }
+                hasScrollListener = !hasScrollListener;
+            }
+            //Return a public toggle method
+            return {
+                toggleScrollLock: toggleScrollLock
+            };
+        });
+
+        $(document).ready(function() {
+            var scrollHandler = new ScrollHandler(),
+                links = $('.topnav a.icon');
+                links.each(function(i, element) {
+                    $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+                });
+        });
+    </script>
 </body>
 </html>
