@@ -41,7 +41,7 @@
         left: 50%;
         top: 47%;
         transform: translate(-50%, 0%);
-        font-size: 3vw;
+        font-size: 3vmin;
         font-weight: bold;
         white-space: pre-line;
         text-align: justify;
