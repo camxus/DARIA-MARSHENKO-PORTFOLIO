@@ -600,7 +600,7 @@
         left: 50%;
         top: 47%;
         transform: translate(-50%, 0%);
-        font-size: 110%;
+        font-size: 1vw;
         font-weight: bold;
         white-space: pre-line;
         text-align: justify;
