@@ -39,8 +39,8 @@
     .contacts {
         position: absolute;
         left: 50%;
-        top: 47%;
-        transform: translate(-50%, 0%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-size: 3vmin;
         font-weight: bold;
         white-space: pre-line;
