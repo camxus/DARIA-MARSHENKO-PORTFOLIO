@@ -13,7 +13,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        animation: fadeIn 1.5s ease;
+        animation: introfadeIn 3s ease;
     }
 
     .description {
@@ -349,6 +349,18 @@
     }
 }
 
+@keyframes introfadeIn{
+    0%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
     /* LAPTOPS */
 @media only screen and (min-width: 600px) {
     .mobile-nav{
@@ -420,7 +432,7 @@
         width: 100%;
         object-fit: cover;
         z-index: 2;
-        animation: fadeIn 1.5s ease;
+        animation: introfadeIn 3s ease;
     }
     
     .intro {
