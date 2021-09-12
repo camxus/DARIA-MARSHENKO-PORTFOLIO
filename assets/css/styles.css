@@ -632,7 +632,7 @@
     .layer {
         position: relative;
         transform: translate(50%, 50%);
-        height: -webkit-fill-available;
+        height: 100vh;
         left: -50%;
      }
     
@@ -941,7 +941,7 @@ section h1 {
 .layer {
     position: relative;
     transform: translate(50%, 50%);
-    height: -webkit-fill-available;
+    height: 100vh;
     left: -50%;
  }
 
