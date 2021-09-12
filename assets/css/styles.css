@@ -207,7 +207,8 @@
 
         .topnav #myLinks #background {
             z-index: -1;
-            position: absolute;
+            position: relative;
+            transform: translate(0, -72px);
             width: 100vw;
             height: 100vh;
             background-color: black;
@@ -217,9 +218,11 @@
         }
 
         .topnav #myLinks #links {
-            position: absolute;
-            z-index: 2;
+            position: relative;
+            bottom: 100vh;
+            /* z-index: 0; */
             width: 100vw;
+            /* height: 100vh; */
             /* visibility: hidden; */
             transition: opacity 1s;
         }
