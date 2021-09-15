@@ -45,6 +45,7 @@ function navbaropen() {
     setTimeout(waitnav, 1)
     setTimeout(toogleblock, 1000)
 
+
     // var u = document.getElementById("topnav a");
     // if (u.style.color === "white") {
     //     u.style.color = "black";

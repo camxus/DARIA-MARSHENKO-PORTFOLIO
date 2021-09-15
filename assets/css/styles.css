@@ -319,6 +319,9 @@
 
     .description .newstext .tbnews {
         table-layout: auto;
+    }
+    
+    .description .newstext .th {
         height: 53vh;
     }
 
@@ -712,8 +715,11 @@
     
     .description .newstext .tbnews {
         table-layout: auto;
-        height: 50vh;
         font-size: 1vw;
+    }
+    
+    .description .newstext .tbnews tr {
+        height: 53vh;
     }
     
     .description .newstext .left {
@@ -741,7 +747,6 @@
         font-size: 130%;
         font-weight: 900;
         width: 50%;
-        height: -webkit-fill-available;
         white-space: pre-line;
         text-align: justify;
         top: 15%;
