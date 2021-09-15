@@ -53,23 +53,88 @@
     <!-- <div class="name">
         <li style="float:right"><a href="about.asp">DARIA MARSHENKO</a></li>
     </div> -->
-    <div class="intro">
-        <h1 class="introname" onload="">YANEMOGU</h1>
-        <img class="introimage" src="./assets/img/INTRO_PIC.jpg"></img>
-    </div>
-    <div class="description">
-        <div class="text">
-            <p>daria marshenko moved to vienna 3 years ago. this transition fundamentally changed her life. because of her cultural (russian) background, in which so many topics are a taboo, the contrast of a /liberated/ european mentality deeply impacted and helped her unfold. 
-
-                marshenko’s philosophy of life, art and work are closely connected. her works are grounded on three themes:
-                
-                EXPERIMENTS /trying to find oneself/
-                
-                ATTENTION /analyzing environment,
-                people and their problems/
-                
-                TABOO</p>
+    <div class="video">
+        <p class="header">VIDEO WORK</p>
+        <div class="video_pane">
+            <div class="videos_list">
+                 <ul>
+                <li style="list-style: none;">
+                    <div class="video_area" onclick="togglevideo('videocontainer',0)">
+                        <div class="video_pane_bg"></div>
+                        <div class="video_image">
+                            <img src="../../assets/img/video1.jpeg"></img>
+                        </div>
+                        <div class="video_description">
+                            <p class="title">/DARIA WANTS TO ESCAPE/</p>
+                            <p class="descriptions">1:27<br>
+                                2015</p>
+                            </div>
+                        </li>
+                        <li style="list-style: none;">
+                            <div class="video_area" onclick="togglevideo('videocontainer',1)">
+                                <div class="video_pane_bg"></div>
+                                <div class="video_image">
+                                    <img src="../../assets/img/video2.jpeg"></img>
+                                </div>
+                                <div class="video_description">
+                                    <p class="title">/DARIA WANTS TO ESCAPE/</p>
+                                    <p class="descriptions">1:27<br>
+                                        2015</p>
+                                    </div>
+                                </li>
+                                <li style="list-style: none;">
+                                    <div class="video_area" onclick="togglevideo('videocontainer',2)">
+                                        <div class="video_pane_bg"></div>
+                                        <div class="video_image">
+                                            <img src="../../assets/img/video3.jpeg"></img>
+                                        </div>
+                                        <div class="video_description">
+                                            <p class="title">/DARIA WANTS TO ESCAPE/</p>
+                                            <p class="descriptions">1:27<br>
+                                                2015</p>
+                                            </div>
+                                        </li>
+                                <li style="list-style: none;">
+                                    <div class="video_area" onclick="togglevideo('videocontainer',2)">
+                                        <div class="video_pane_bg"></div>
+                                        <div class="video_image">
+                                            <img src="../../assets/img/video4.jpeg"></img>
+                                        </div>
+                                        <div class="video_description">
+                                            <p class="title">/DARIA WANTS TO ESCAPE/</p>
+                                            <p class="descriptions">1:27<br>
+                                                2015</p>
+                                            </div>
+                                        </li>
+                 </ul>
+            </div>
         </div>
+        <div id="videocontainer" style="opacity: 0; display: none">
+            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div id="close" onclick="togglevideo('videocontainer',0)">
+                <img src="../../assets/img/close.png"></img>
+            </div>
+        </div>
+        <div id="videocontainer" style="opacity: 0; display: none">
+            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div id="close" onclick="togglevideo('videocontainer',1)">
+                <img src="../../assets/img/close.png"></img>
+            </div>
+        </div>
+        <div id="videocontainer" style="opacity: 0; display: none">
+            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div id="close" onclick="togglevideo('videocontainer',2)">
+                <img src="../../assets/img/close.png"></img>
+        <div id="videocontainer" style="opacity: 0; display: none">
+            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div id="close" onclick="togglevideo('videocontainer',3)">
+                <img src="../../assets/img/close.png"></img>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+    
     </div>
         
     <section id="end" class="layer">
@@ -128,5 +193,7 @@
                 });
         });
     </script>
+
+<script src="../../assets/js/video.js"></script>
 </body>
 </html>

@@ -9,26 +9,21 @@ function toogleblock() {
     else{
         i = false;
         console.log('False')
-        // z.style.display = "block";
     }
 }
 
 function waitnav() {
     var y = document.getElementById("links");
     if (y.style.opacity === "0") {
-        // y.style.display = "block";
         y.style.opacity = "1";
     } else {
-        // x.style.display = "none";
         y.style.opacity = "0";
         
     }
     var x = document.getElementById("background");
     if (x.style.opacity === "0") {
-        // x.style.display = "block";
         x.style.opacity = "1";
     } else {
-        // x.style.display = "none";
         x.style.opacity = "0";
         
     }
