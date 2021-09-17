@@ -45,6 +45,7 @@
         text-align: justify;
         list-style-type: none;
         color: white;
+        animation: fadeIn 1.5s ease;
     }
     .intro h1 {
         position: absolute;
@@ -615,14 +616,15 @@
     .contacts {
         position: absolute;
         left: 50%;
-        top: 47%;
-        transform: translate(-50%, 0%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-size: 1vw;
         font-weight: bold;
         white-space: pre-line;
         text-align: justify;
         list-style-type: none;
         color: white;
+        animation: fadeIn 1.5s ease;
         
     }
     
@@ -697,12 +699,13 @@
     
     .navbar .background {
         position: absolute;
-        width: 100vw;
-        left: -3.2vw;
-        height: 11vh;
+        top: 38%;
+        left: 50%;
+        width: 130vw;
+        transform: translate(-50%, -50%);
+        height: calc(100% + 201%);
         background-color: black;
         z-index: 0;
-        top: -33px;
     }
     
     /* NEWS */
@@ -762,7 +765,7 @@
         font-weight: 900;
         width: 50%;
         white-space: pre-line;
-        top: 8%;
+        top: 8vh;
         animation: fadeIn 1.5s ease;
     }
     
@@ -918,12 +921,13 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 12px;
+        padding-right: 2vw;
+        padding-top: 2vh;
         cursor: pointer;
     }
 
     #close img {
-        filter: opacity(0.3) drop-shadow(0 0 0 white);
+        filter: opacity(1) drop-shadow(0 0 0 white);
         width: 54px;
         padding: 6px;
     }
@@ -1068,9 +1072,7 @@ section h1 {
 
 .layer {
     position: relative;
-    transform: translate(50%, 50%);
     height: 100vh;
-    left: -50%;
  }
 
 .line {

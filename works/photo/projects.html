@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/projects.css">
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <meta name="format-detection" content="telephone=no">
     <title>YNM</title>
 </head>
 <body id="body">
-    <div class="nav">
-        <li><a href="../../index.html">HOME</a></li>
-        <li><a href="../../about/about.html">ABOUT</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">WORKS</a>
-            <div class="dropdown-content">
-              <a href="../../works/photo/photo.html">PHOTO</a>
-              <a href="../../works/video/video.html">VIDEO</a>
-            </div>
-          </li>
-        <li><a href="../../news/news.html">NEWS</a></li>
-        <li><a href="#end">CONTACT</a></li>
-        <li style="float:right"><a href="mailto:darianepeutpas@gmail.com">DARIA MARSHENKO</a></li>
-    </div>
+  <div class="navbar">
+    <div class="background"></div>
+    <li><a href="../../index.html">HOME</a></li>
+    <li><a href="../../about/about.html">ABOUT</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">WORKS</a>
+        <div class="dropdown-content">
+          <a href="../../works/photo/projects.html">PHOTO</a>
+          <a href="../../works/video/video.html">VIDEO</a>
+        </div>
+      </li>
+    <li><a href="../../news/news.html">NEWS</a></li>
+    <li><a href="../../contact.html">CONTACT</a></li>
+    <li style="float:right"><a href="mailto:darianepeutpas@gmail.com">DARIA MARSHENKO</a></li>
+</div>
     <!-- MOBILE NAV -->
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,10 +40,10 @@
                 <li><a href="../../index.html">HOME</a></li>
                 <li><a href="../../about/about.html">ABOUT</a></li> 
                 <a class="">WORKS</a>
-                <li><a href="../../works/photo/photo.html" style="padding-left: 20vw;">    PHOTO</a></li> 
+                <li><a href="../../works/photo/projects.html" style="padding-left: 20vw;">    PHOTO</a></li> 
                 <li><a href="../../works/video/video.html" style="padding-left: 20vw;">    VIDEO</a></li> 
                 <li><a href="../../news/news.html">NEWS</a></li>
-                <li onclick="navbaropen()"><a href="#end">CONTACT</a></li>
+                <li><a href="../../contact.html">CONTACT</a></li>
             </div>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -54,11 +56,18 @@
         <li style="float:right"><a href="about.asp">DARIA MARSHENKO</a></li>
     </div> -->
     
-
-    <section id="end" class="layer">
-        <div class="contacts">1070 VIENNA AUSTRIA<br><a href="tel:+43 660 2590772">+43 660 2590772</a><a href="mailto:darianepeutpas@gmail.com">DARIANEPEUTPAS@GMAIL.COM</a><a href="https://www.instagram.com/yanemogu">INSTAGRAM: @YANEMOGU</a>
+    <div class="projects">
+        <div class="photo_pane">
+          <a href="./color_studies.html">
+            <div class="colour_studies">
+              <div class="picture" style="overflow: hidden;"><img src="../../assets/img/photo_projects/COLOUR_STUDIES/COLOUR_STUDIES.png">
+              </div>
+              <p>COLOR STUDIES</p>
+            </div>
+          </a>
         </div>
-    </section>
+    </div>
+   
 
 
 
@@ -103,6 +112,66 @@
                     $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
                 });
         });
+    </script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+ 
+ const carousels = document.querySelectorAll('.carousel');
+ carousels.forEach(function( carousel ) {
+
+   const ele = carousel.querySelector('ul');
+   const bullets = carousel.querySelectorAll('ol li');
+   const nextarrow = carousel.querySelector('.next');
+   const prevarrow = carousel.querySelector('.prev');
+   bullets[0].classList.add('selected');
+
+   const setSelected = function() {
+       bullets.forEach(function(bullet) {
+          bullet.classList.remove('selected');
+       });
+       let nthchild = (Math.round(ele.scrollLeft/carousel.scrollWidth)+1);
+       carousel.querySelector('ol li:nth-child('+nthchild+')').classList.add('selected'); 
+   }
+   
+   const nextSlide = function() {
+     if(!carousel.querySelector('ol li:last-child').classList.contains('selected')) {
+       carousel.querySelector('ol li.selected').nextElementSibling.querySelector('a').click();
+       ele.scrollLeft = ele.scrollLeft + carousel.scrollWidth;
+     } else {
+       carousel.querySelector('ol li:first-child a').click();
+       ele.scrollLeft = 0;
+     }
+   }
+
+   const prevSlide = function() {
+     if(!carousel.querySelector('ol li:first-child').classList.contains('selected')) {
+       carousel.querySelector('ol li.selected').previousElementSibling.querySelector('a').click();
+       ele.scrollLeft = ele.scrollLeft - carousel.scrollWidth;
+     } else {
+       carousel.querySelector('ol li:last-child a').click();
+       ele.scrollLeft = ele.scrollWidth - carousel.scrollWidth;
+     }
+   }
+     
+   // Attach the handlers
+   ele.addEventListener("scroll", setSelected);
+   nextarrow.addEventListener("click", nextSlide);
+   prevarrow.addEventListener("click", prevSlide);
+
+   //setInterval for autoplay
+   if(carousel.getAttribute('duration')) {
+     setInterval(function(){ 
+       if (ele != document.querySelector(".carousel:hover ul")) {
+         if(ele.scrollWidth > ele.scrollLeft + carousel.scrollWidth) {
+           ele.scrollLeft = ele.scrollLeft + carousel.scrollWidth;
+         } else ele.scrollLeft = 0;
+       }
+     }, carousel.getAttribute('duration'));
+   }
+   
+ }); //end foreach
+ 
+}); //end onload
     </script>
 </body>
 </html>

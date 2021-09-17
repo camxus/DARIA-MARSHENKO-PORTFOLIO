@@ -1,0 +1,5 @@
+                   .carousel ul li {background: url(../img/photo_projects/COLOUR_STUDIES/1.jpg) center center / cover no-repeat; }
+.carousel ul li:nth-child(2) {background-image: url(../img/photo_projects/COLOUR_STUDIES/2.jpg);}
+.carousel ul li:nth-child(3) {background-image: url(../img/photo_projects/COLOUR_STUDIES/3.jpg);}
+.carousel ul li:nth-child(4) {background-image: url(../img/photo_projects/COLOUR_STUDIES/4.jpg);}
+.carousel ul li:nth-child(5) {background-image: url(../img/photo_projects/COLOUR_STUDIES/5.jpg);}

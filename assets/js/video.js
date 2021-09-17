@@ -25,7 +25,7 @@ function togglevideo(input,index){
     y = getElementsById(input)[index]
     console.log(y)
     if (y.style.opacity === "0") {
-        y.style.display = "block";
+        y.style.display = "grid";
         setTimeout(fadetimeout, 1);
     } else {
         y.style.opacity = "0";
