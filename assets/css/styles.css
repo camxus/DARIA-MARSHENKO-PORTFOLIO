@@ -359,11 +359,11 @@
     
     /* VIDEO */
     .video_pane ul {
-        width: 86vw;
+        width: 100vw;
     }
 
     .videos_list{
-        transform: scale(0.2);
+        transform: scale(0.4);
     }
 
 } 
