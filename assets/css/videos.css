@@ -9,9 +9,9 @@
 
     .video_description_pane {
         /* grid-area: right; */
-        height: 45vh;
+        height: calc(100vh - 32vh);
         width: 100%;
-        overflow-y: auto;
+        overflow-y: scroll;
     }
     .video_description_pane p {
         font-size: 0.7rem;
