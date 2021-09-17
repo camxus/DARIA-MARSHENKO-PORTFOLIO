@@ -362,6 +362,10 @@
         width: 86vw;
     }
 
+    .videos_list{
+        transform: scale(0.2);
+    }
+
 } 
 
 @keyframes fadeIn{
@@ -800,6 +804,10 @@
     .video_pane ul {
         width: 80%;
     }
+
+    .videos_list{
+        transform: scale(0.7);
+    }
 } 
     /* VIDEO */
     .video {
@@ -911,7 +919,6 @@
     }
 
     .videos_list{
-        transform: scale(0.7);
         position: absolute;
         width: 100%;
         top: 50%;
