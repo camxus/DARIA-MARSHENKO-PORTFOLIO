@@ -14,7 +14,7 @@
         overflow-y: auto;
     }
     .video_description_pane p {
-        font-size: 1rem;
+        font-size: 0.7rem;
         font-weight: bold;
         text-align: left;
         /* overflow: hidden; */
