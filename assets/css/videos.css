@@ -88,3 +88,7 @@
     }
 
 }
+
+.videos_list li {
+    width: 100%;
+}

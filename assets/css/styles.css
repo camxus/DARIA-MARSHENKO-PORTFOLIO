@@ -745,7 +745,7 @@
         width: 50%;
         white-space: pre-line;
         text-align: justify;
-        top: 15%;
+        top: 16vh;
         animation: fadeIn 1.5s ease;
     }
     
@@ -765,7 +765,7 @@
         font-weight: 900;
         width: 50%;
         white-space: pre-line;
-        top: 8vh;
+        top: 16vh;
         animation: fadeIn 1.5s ease;
     }
     
