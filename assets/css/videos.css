@@ -14,7 +14,7 @@
         overflow-y: auto;
     }
     .video_description_pane p {
-        font-size: 2.1rem;
+        font-size: 1rem;
         font-weight: bold;
         text-align: left;
         /* overflow: hidden; */
@@ -30,7 +30,7 @@
     }
 
     .video_description_pane h1 {
-        font-size: 3.8rem;
+        font-size: 1rem;
         display: inline-block;
         position: relative;
         top: 50%;
