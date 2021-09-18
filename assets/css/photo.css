@@ -5,6 +5,7 @@
 }
 .colour_studies {
   top: 300px;
+  width: 23vw;
   position: absolute;
   opacity: 0.5;
   transition: opacity 1s;
@@ -19,7 +20,8 @@
 .photo_pane p {
   font-size: 2.58vw;
   font-weight: bold;
-  text-align: left;
+  text-align: justify;
+  text-align-last: justify;
   padding-left: 0;
 }
 
