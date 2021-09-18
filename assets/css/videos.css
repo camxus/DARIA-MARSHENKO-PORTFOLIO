@@ -9,7 +9,7 @@
 
     .video_description_pane {
         /* grid-area: right; */
-        height: calc(100vh - 32vh);
+        height: calc(100vh - 43vh);
         width: 100%;
         overflow-y: scroll;
     }
