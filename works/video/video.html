@@ -115,8 +115,8 @@
             </div>
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
-            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div id="close" onclick="togglevideo('videocontainer',0)">
+            <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div id="close" onclick="togglevideo('videocontainer',0); pausevideo()">
                 <img src="../../assets/img/close.png"></img>
             </div>
             <div>
@@ -155,7 +155,7 @@
             </div>
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
-            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <div id="close" onclick="togglevideo('videocontainer',1)">
                 <img src="../../assets/img/close.png"></img>
             </div>
@@ -170,7 +170,7 @@
             </div>
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
-            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="videoframe"  class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <div id="close" onclick="togglevideo('videocontainer',2)">
                 <img src="../../assets/img/close.png"></img>
             </div>
@@ -187,7 +187,7 @@
             </div>
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
-            <iframe class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <div id="close" onclick="togglevideo('videocontainer',3)">
                 <img src="../../assets/img/close.png"></img>
             </div>
@@ -256,7 +256,20 @@
                 });
         });
     </script>
+    <script type="text/javascript">
+   $("#close").click(function() {
+        var $frame = $('iframe#videoframe');
 
+        // saves the current iframe source
+        var vidsrc = $frame.attr('src');
+
+        // sets the source to nothing, stopping the video
+        $frame.attr('src',''); 
+
+        // sets it back to the correct link so that it reloads immediately on the next window open
+        $frame.attr('src', vidsrc);
+        });
+    </script>
 <script src="../../assets/js/video.js"></script>
 </body>
 </html>

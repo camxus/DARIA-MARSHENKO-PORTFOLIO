@@ -21,9 +21,9 @@ function getElementsById(elementID){
 }
 
 function togglevideo(input,index){
-    console.log(index)
+    // console.log(index)
     y = getElementsById(input)[index]
-    console.log(y)
+    // console.log(y)
     if (y.style.opacity === "0") {
         y.style.display = "grid";
         setTimeout(fadetimeout, 1);
@@ -33,3 +33,14 @@ function togglevideo(input,index){
     }
 }
 
+function pausevideo() {
+    var iframe = document.querySelector( 'iframe' );
+	var video = document.querySelector( 'video' );
+	if ( iframe ) {
+		var iframeSrc = iframe.src;
+		iframe.src = iframeSrc;
+	}
+	if ( video ) {
+		video.pause();
+	}
+}
