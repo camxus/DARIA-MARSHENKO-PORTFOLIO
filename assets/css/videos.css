@@ -42,6 +42,10 @@
         /* grid-area: left; */
         height: 40vh;
     }
+
+    .videos_list li {
+        width: 100%;
+    }
 }
 
 
@@ -87,8 +91,8 @@
         grid-area: left;
     }
 
+    .videos_list li {
+        width: 49.8%;
+    }
 }
 
-.videos_list li {
-    width: 100%;
-}
