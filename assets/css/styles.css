@@ -780,7 +780,12 @@
     
     .description .biotext .biotb {
         table-layout: auto;
-        height: -webkit-fill-available;
+        height: auto;
+    }
+
+    .description .biotext .biotb tr {
+        table-layout: auto;
+        height: 10vh;
     }
     .description .biotext td {
         font-size: 0.9vw;
