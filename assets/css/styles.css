@@ -12,7 +12,7 @@
 
     .introimage {
         height: 100%;
-        width: 100%;
+        /* width: 100%; */
         object-fit: cover;
         animation: introfadeIn 3s ease;
     }
@@ -816,14 +816,6 @@
         position: relative;
     }
 
-    .video .header {position: absolute;
-        position: absolute;
-        top: 18%;
-        left: 46%;
-        transform: translate(-50%, -50%);
-        font-weight: bold;
-        font-size: 7vw;
-    }
 
     .video_pane {
         position: absolute;
