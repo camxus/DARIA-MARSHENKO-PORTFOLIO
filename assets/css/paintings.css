@@ -13,7 +13,7 @@
 
 .preview{
     position: relative;
-    width: 25vw;
+    width: 25vw;cursor: pointer;
 }
 
 .preview img{
