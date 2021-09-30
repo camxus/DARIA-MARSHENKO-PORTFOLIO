@@ -1,0 +1,114 @@
+@media only screen and (max-width: 768px) {
+    /* NEWS */
+
+
+    .description .newstext .tbnews {
+        table-layout: auto;
+        height: 61vh;
+    }
+    
+    .description .newstext .th {
+        height: 53vh;
+    }
+
+    .description .newstext .left {
+        width: 19vw;
+    }
+    .description .newstext .middle {
+        width: 27%;
+    }
+    .description .newstext .right {
+        table-layout: auto;
+    }
+
+    .description .newstext td {
+        vertical-align: top;
+    }
+    .description .newstext p {
+        font-size: 11vw;
+        padding-bottom: 5%;
+    }
+
+    .description .newstext {
+        position: relative;
+        left: 50vw;
+        transform: translate(-50%, 0%);
+        font-size: 2.3vw;
+        font-weight: 900;
+        width: 78vw;
+        height: -webkit-fill-available;
+        white-space: pre-line;
+        text-align: justify;
+        top: 15%;
+        animation: fadeIn 1.5s ease;
+
+    }
+    
+    /* VIDEO */
+    .video_pane ul {
+        width: 140vw;
+    }
+
+    .videos_list{
+        transform: scale(0.4);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* NEWS */
+    .description .newstext .tbnews {
+        table-layout: auto;
+        font-size: 1vw;
+    }
+    
+    .description .newstext .tbnews tr {
+        height: 10vh;
+    }
+    
+    .description .newstext .left {
+        width: 19%;
+    }
+    .description .newstext .middle {
+        width: 27%;
+    }
+    .description .newstext .right {
+        table-layout: auto;
+    }
+    
+    .description .newstext td {
+        vertical-align: top;
+    }
+    .description .newstext p {
+        font-size: 350%;
+        padding-bottom: 5%;
+    }
+    
+    .description .newstext {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        font-size: 130%;
+        font-weight: 900;
+        width: 50%;
+        white-space: pre-line;
+        text-align: justify;
+        top: 16vh;
+        animation: fadeIn 1.5s ease;
+    }
+    
+}
+
+.publications {
+    padding-top: 0%;
+    padding-bottom: 10%;position: relative;top: -2vw;
+}
+
+.publications-table {
+    font-size: 1vw;width: 100%;
+}
+
+.publications-table .right a::after {
+    height: 1px;
+    width: 66.5%;
+}
+

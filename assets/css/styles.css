@@ -313,58 +313,7 @@
         font-size: 5vw;
     }
 
-    /* NEWS */
-
-
-    .description .newstext .tbnews {
-        table-layout: auto;
-    }
     
-    .description .newstext .th {
-        height: 53vh;
-    }
-
-    .description .newstext .left {
-        width: 19vw;
-    }
-    .description .newstext .middle {
-        width: 27%;
-    }
-    .description .newstext .right {
-        table-layout: auto;
-    }
-
-    .description .newstext td {
-        vertical-align: top;
-    }
-    .description .newstext p {
-        font-size: 11vw;
-        padding-bottom: 5%;
-    }
-
-    .description .newstext {
-        position: relative;
-        left: 50vw;
-        transform: translate(-50%, 0%);
-        font-size: 2.3vw;
-        font-weight: 900;
-        width: 78vw;
-        height: -webkit-fill-available;
-        white-space: pre-line;
-        text-align: justify;
-        top: 15%;
-        animation: fadeIn 1.5s ease;
-
-    }
-    
-    /* VIDEO */
-    .video_pane ul {
-        width: 140vw;
-    }
-
-    .videos_list{
-        transform: scale(0.4);
-    }
 
 } 
 
@@ -712,46 +661,6 @@
         z-index: 0;
     }
     
-    /* NEWS */
-    .description .newstext .tbnews {
-        table-layout: auto;
-        font-size: 1vw;
-    }
-    
-    .description .newstext .tbnews tr {
-        height: 10vh;
-    }
-    
-    .description .newstext .left {
-        width: 19%;
-    }
-    .description .newstext .middle {
-        width: 27%;
-    }
-    .description .newstext .right {
-        table-layout: auto;
-    }
-    
-    .description .newstext td {
-        vertical-align: top;
-    }
-    .description .newstext p {
-        font-size: 350%;
-        padding-bottom: 5%;
-    }
-    
-    .description .newstext {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        font-size: 130%;
-        font-weight: 900;
-        width: 50%;
-        white-space: pre-line;
-        text-align: justify;
-        top: 16vh;
-        animation: fadeIn 1.5s ease;
-    }
     
     
     /* BIO */
