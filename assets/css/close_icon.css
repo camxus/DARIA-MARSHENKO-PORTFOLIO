@@ -1,0 +1,64 @@
+.close-area {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 80px;
+    width: 80px;cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+    z-index: 1;
+    pointer-events: all;
+    /* border: 3px solid #fff; */
+  }
+
+.close-btn.open .close-btn__icon {
+    background: transparent;
+    box-shadow: none;
+    position: absolute;
+}
+.close-btn.open .close-btn__icon::before {
+    transform: rotate(45deg);
+    width: 40px;
+    background: white;
+}
+.close-btn.open .close-btn__icon::after {
+    transform: rotate(-45deg);
+    width: 40px;
+    background: white;
+  }
+
+.close-btn__icon {
+    width: 40px;
+    height: 2px;
+    background: transparent;
+    border-radius: 0px;
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
+    transition: all .5s ease-in-out;
+}
+.close-btn__icon::before,
+.close-btn__icon::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
+    transition: all .5s ease-in-out;
+}
+.close-btn__icon::before {
+    transform: rotate(45deg);
+}
+.close-btn__icon::after {
+    transform: rotate(-45deg);
+}

@@ -49,7 +49,7 @@
     }
     .intro h1 {
         position: absolute;
-        top: 58vh;
+        top: 48vh;
         left: 50vw;
         transform: translate(-50%, -50%);
         font-size: 13vw;
@@ -395,13 +395,13 @@
         transform: translate(0, 0);
         content: "";
         display: block;
-        height: 2px;
+        height: 2px;width: 0%;
         /* left: 18%; */
         position: relative;
         top: 1px;
         background: white;
         transition: width 0.3s ease 0s;
-        width: 0;
+        
       }
     
     .introimage {
@@ -637,11 +637,11 @@
       
     .navbar li a {
         font-size: 0.9vw;
-        display: block;
-        color: white;
-        text-align: center;
+        
+        color: white;display: inline-block;
+        /* text-align: center; */
         padding: 14px 16px;
-        text-decoration: none;
+        text-decoration: none;text-align: left;
       }
       
       /* Change the link color to #111 (black) on hover */

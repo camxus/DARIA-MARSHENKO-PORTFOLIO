@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/videos.css">
+    <link rel="stylesheet" href="../../assets/css/close_icon.css">
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <meta name="format-detection" content="telephone=no">
     <title>YNM</title>
@@ -19,6 +20,7 @@
             <div class="dropdown-content">
               <a href="../../works/photo/photo.html">PHOTO</a>
               <a href="../../works/video/video.html">VIDEO</a>
+              <a href="../../works/paintings.html">PAINTINGS</a>
             </div>
           <li><a href="../../news/news.html">NEWS</a></li>
           <li><a href="../../contact.html">CONTACT</a></li>
@@ -116,8 +118,11 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/584776387?h=7ec35e6bdb&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div id="close" onclick="togglevideo('videocontainer',0); pausevideo()">
-                <img src="../../assets/img/close.png"></img>
+            <div class="close-area">
+                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+                    <div class="close-btn__icon"></div>
+                    <!-- <img src="../../assets/img/close.png"></img> -->
+                </div>
             </div>
             <div>
                 <div class="video_description_pane">
@@ -156,8 +161,11 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div id="close" onclick="togglevideo('videocontainer',1); pausevideo()">
-                <img src="../../assets/img/close.png"></img>
+            <div class="close-area">
+                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+                    <div class="close-btn__icon"></div>
+                    <!-- <img src="../../assets/img/close.png"></img> -->
+                </div>
             </div>
             <div>
                 <div class="video_description_pane">
@@ -171,8 +179,11 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe"  class="videoframe" src="https://player.vimeo.com/video/611624944?h=0c98b6aff3&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div id="close" onclick="togglevideo('videocontainer',2); pausevideo()">
-                <img src="../../assets/img/close.png"></img>
+            <div class="close-area">
+                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+                    <div class="close-btn__icon"></div>
+                    <!-- <img src="../../assets/img/close.png"></img> -->
+                </div>
             </div>
             <div>
                 <div class="video_description_pane">
@@ -188,8 +199,11 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/559657460?h=c262043ec3&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div id="close" onclick="togglevideo('videocontainer',3); pausevideo()">
-                <img src="../../assets/img/close.png"></img>
+            <div class="close-area">
+                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+                    <div class="close-btn__icon"></div>
+                    <!-- <img src="../../assets/img/close.png"></img> -->
+                </div>
             </div>
             <div>
                 <div class="video_description_pane">
@@ -271,5 +285,6 @@
         });
     </script>
 <script src="../../assets/js/video.js"></script>
+<script src="../../assets/js/close.js"></script>
 </body>
 </html>

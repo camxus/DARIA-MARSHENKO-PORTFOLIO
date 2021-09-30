@@ -60,13 +60,16 @@
     }
 
     .video_description_pane {
+        position: absolute;
         grid-area: right;
-        height: 100vh;
+        top: 5vh;
+        height: calc(100vh - 5vh);
         width: 100%;
         overflow-y: auto;
     }
     .video_description_pane p {
         font-size: 1.3rem;
+        line-height: 4.6vh;
         font-weight: bold;
         text-align: left;
         width: 80%;
