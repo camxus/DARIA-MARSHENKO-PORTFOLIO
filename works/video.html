@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="../../assets/css/videos.css">
-    <link rel="stylesheet" href="../../assets/css/close_icon.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/videos.css">
+    <link rel="stylesheet" href="../assets/css/close_icon.css">
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <meta name="format-detection" content="telephone=no">
     <title>YNM</title>
 </head>
 <body id="body">
+
     <div class="navbar">
         <div class="background"></div>
-        <li><a href="../../index.html">HOME</a></li>
-        <li><a href="../../about/about.html">ABOUT</a></li> 
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../about.html">ABOUT</a></li> 
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">WORKS</a>
             <div class="dropdown-content">
-              <a href="../../works/photo/photo.html">PHOTO</a>
-              <a href="../../works/video/video.html">VIDEO</a>
-              <a href="../../works/paintings.html">PAINTINGS</a>
+              <a href="../works/photo.html">PHOTO</a>
+              <a href="../works/video.html">VIDEO</a>
+              <a href="../works/paintings.html">PAINTINGS</a>
             </div>
-          <li><a href="../../news/news.html">NEWS</a></li>
-          <li><a href="../../contact.html">CONTACT</a></li>
-        <li style="float:right"><a href="mailto:darianepeutpas@gmail.com">DARIA MARSHENKO</a></li>
+          <li><a href="../news/news.html">NEWS</a></li>
+          <li><a href="../contact.html">CONTACT</a></li>
+        <li style="float:right"><a href="mailto:contact@yanemogu.com">DARIA MARSHENKO</a></li>
     </div>
     <!-- MOBILE NAV -->
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -33,18 +34,18 @@
     <!-- Top Navigation Menu -->
     <div class="mobile-nav">
         <div class="topnav" style="color: white">
-        <li><a href="mailto:darianepeutpas@gmail.com" class="active">DARIA MARSHENKO</a></li>
+        <li><a href="mailto:contact@yanemogu.com" class="active">DARIA MARSHENKO</a></li>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks" style="display: none">
             <div id="background" style="opacity: 0"></div>
             <div id="links" style="opacity: 0">
-                <li><a href="../../index.html">HOME</a></li>
-                <li><a href="../../about/about.html">ABOUT</a></li> 
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../about.html">ABOUT</a></li> 
                 <a class="">WORKS</a>
-                <li><a href="../../works/photo/photo.html" style="padding-left: 20vw;">    PHOTO</a></li> 
-                <li><a href="../../works/video/video.html" style="padding-left: 20vw;">    VIDEO</a></li> 
-                <li><a href="../../news/news.html">NEWS</a></li>
-                <li><a href="../../contact.html">CONTACT</a></li>
+                <li><a href="../works/photo.html" style="padding-left: 20vw;">    PHOTO</a></li> 
+                <li><a href="../works/video.html" style="padding-left: 20vw;">    VIDEO</a></li> 
+                <li><a href="../news/news.html">NEWS</a></li>
+                <li><a href="../contact.html">CONTACT</a></li>
             </div>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -56,6 +57,7 @@
     <!-- <div class="name">
         <li style="float:right"><a href="about.asp">DARIA MARSHENKO</a></li>
     </div> -->
+
     <div class="video">
         <p class="header">VIDEO WORK</p>
         <div class="video_pane">
@@ -65,7 +67,7 @@
                         <div class="video_area" onclick="togglevideo('videocontainer',0)">
                             <div class="video_pane_bg"></div>
                             <div class="video_image">
-                                <img src="../../assets/img/video1.jpeg"></img>
+                                <img src="../assets/img/video1.jpeg"></img>
                             </div>
                             <div class="video_description">
                                 <p class="title">/UNCONDITIONAL AFFECTION/</p>
@@ -78,7 +80,7 @@
                         <div class="video_area" onclick="togglevideo('videocontainer',1)">
                             <div class="video_pane_bg"></div>
                             <div class="video_image">
-                                <img src="../../assets/img/video2.jpeg"></img>
+                                <img src="../assets/img/video2.jpeg"></img>
                             </div>
                             <div class="video_description">
                                 <p class="title">/DARIA WANTS TO ESCAPE/</p>
@@ -91,7 +93,7 @@
                         <div class="video_area" onclick="togglevideo('videocontainer',2)">
                             <div class="video_pane_bg"></div>
                             <div class="video_image">
-                                <img src="../../assets/img/video3.jpeg"></img>
+                                <img src="../assets/img/video3.jpeg"></img>
                             </div>
                             <div class="video_description">
                                 <p class="title">/TIMEFLOW/</p>
@@ -104,7 +106,7 @@
                         <div class="video_area" onclick="togglevideo('videocontainer',3)">
                             <div class="video_pane_bg"></div>
                             <div class="video_image">
-                                <img src="../../assets/img/video4.jpeg"></img>
+                                <img src="../assets/img/video4.jpeg"></img>
                             </div>
                             <div class="video_description">
                                 <p class="title">/LOST IN CONCENTRATION/</p>
@@ -118,8 +120,8 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/584776387?h=7ec35e6bdb&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div class="close-area">
-                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+            <div class="close-area" onclick="togglevideo('videocontainer',0); pausevideo();">
+                <div class="close-btn open">
                     <div class="close-btn__icon"></div>
                     <!-- <img src="../../assets/img/close.png"></img> -->
                 </div>
@@ -161,8 +163,8 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/605472762?h=97f150879d&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div class="close-area">
-                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+            <div class="close-area" onclick="togglevideo('videocontainer',0); pausevideo()">
+                <div class="close-btn open">
                     <div class="close-btn__icon"></div>
                     <!-- <img src="../../assets/img/close.png"></img> -->
                 </div>
@@ -179,8 +181,8 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe"  class="videoframe" src="https://player.vimeo.com/video/611624944?h=0c98b6aff3&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div class="close-area">
-                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+            <div class="close-area" onclick="togglevideo('videocontainer',0); pausevideo()">
+                <div class="close-btn open">
                     <div class="close-btn__icon"></div>
                     <!-- <img src="../../assets/img/close.png"></img> -->
                 </div>
@@ -199,8 +201,8 @@
         </div>
         <div id="videocontainer" style="opacity: 0; display: none">
             <iframe id="videoframe" class="videoframe" src="https://player.vimeo.com/video/559657460?h=c262043ec3&enablejsapi=1" width="640" height="479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <div class="close-area">
-                <div class="close-btn" onclick="togglevideo('videocontainer',0); pausevideo()">
+            <div class="close-area" onclick="togglevideo('videocontainer',0); pausevideo()">
+                <div class="close-btn open">
                     <div class="close-btn__icon"></div>
                     <!-- <img src="../../assets/img/close.png"></img> -->
                 </div>
@@ -284,7 +286,7 @@
         $frame.attr('src', vidsrc);
         });
     </script>
-<script src="../../assets/js/video.js"></script>
-<script src="../../assets/js/close.js"></script>
+<script src="../assets/js/video.js"></script>
+<script src="../assets/js/close.js"></script>
 </body>
 </html>
