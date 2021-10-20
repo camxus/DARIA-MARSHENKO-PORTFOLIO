@@ -811,7 +811,7 @@
     }
     
     .video_image img {
-        width: 168px;
+        width: 168px;min-height: 125px;
         vertical-align: top;
     }
 
